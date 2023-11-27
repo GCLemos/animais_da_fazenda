@@ -16,15 +16,15 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'RocknRoll One', sans-serif;
   min-height: 100vh;
 }
 
 
 h1 {
   color: var(--branco);
-  margin-bottom: 20px;
-  font-size: 2rem;
+  margin-bottom: 30px;
+  font-size: 2.3rem;
 }
 
 .teclado {
@@ -44,8 +44,6 @@ h1 {
   color: var(--fundo-botao);
   cursor: pointer;
   height: 120px;
-  font-size: 1.75em;
-  font-weight: bold;
   line-height: 120px;
   text-align: center;
   width: 120px;
@@ -74,5 +72,32 @@ h1 {
 .texto-rodape {
   color: var(--branco);
   font-size: 1.5rem;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px;
+  }
+
+  h1, 
+  .texto-rodape {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .texto-rodape {
+    font-size: 1.2rem;
+  }
+
+  .tecla {
+    height: 90px;
+    line-height: 90px;
+    width: 90px;
+  }
+  
 }

@@ -69,10 +69,40 @@ h1 {
   box-shadow: 3px 3px 0 var(--fundo-botao-pressionado) inset, 1px 1px 10px var(--foco);
 }
 
-.texto-rodape {
+.rodape {
   color: var(--branco);
   font-size: 1.5rem;
   margin-top: 30px;
+}
+
+
+.container_conteudo__rodape {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.container_links__rodape {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.fa-brands {
+  color: var(--cor-destaque);
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-brands:hover {
+  scale: 1.2;
+  transform: translateY(-5px);
 }
 
 @media (max-width: 600px) {
@@ -82,7 +112,7 @@ h1 {
   }
 
   h1, 
-  .texto-rodape {
+  .rodape {
     text-align: center;
   }
 
@@ -90,8 +120,12 @@ h1 {
     font-size: 2rem;
   }
 
-  .texto-rodape {
+  .rodape {
     font-size: 1.2rem;
+  }
+
+  .fa-brands {
+    font-size: 1.5rem;
   }
 
   .tecla {
